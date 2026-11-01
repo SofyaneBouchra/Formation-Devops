@@ -64,10 +64,10 @@ docker build -t maven-jenkins-agent:v1 .
 
 # 🌍 **3 — Renommer l’image avec ton Docker Hub**
 
-Supposons que ton Docker Hub est : **donald284**
+Supposons que ton Docker Hub est : **sofyanebouchra**
 
 ```bash
-docker tag maven-jenkins-agent:v1 donald284/maven-jenkins-agent:v1
+docker tag maven-jenkins-agent:v1 sofyanebouchra/maven-jenkins-agent:v1
 ```
 
 ---
@@ -83,13 +83,13 @@ docker login
 Push :
 
 ```bash
-docker push donaldte/maven-jenkins-agent:v1
+docker push sofyanebouchra/maven-jenkins-agent:v1
 ```
 
 Ton agent est maintenant public ✔️
 Tu peux vérifier ici :
 
-👉 [https://hub.docker.com/r/donald284/maven-jenkins-agent](https://hub.docker.com/r/donaldte/maven-jenkins-agent)
+👉 [https://hub.docker.com/r/sofyanebouchra/maven-jenkins-agent](https://hub.docker.com/r/sofyanebouchra/maven-jenkins-agent)
 
 ---
 
@@ -101,7 +101,7 @@ Dans ton `Jenkinsfile` :
 pipeline {
   agent {
     docker {
-      image 'donald284/maven-jenkins-agent:v1'
+      image 'sofyanebouchra/maven-jenkins-agent:v1'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
     }
   }

@@ -19,7 +19,7 @@ L’application suit l’architecture **MVC**, où un contrôleur renvoie une pa
 # 📁 **Cloner ce dépôt**
 
 ```
-git clone https://github.com/donaldte/Formation-Devops.git
+git clone https://github.com/SofyaneBouchra/Formation-Devops.git
 cd /Formation-Devops/Jenkins-Zero-To-Hero/java-maven-sonar-argocd-helm-k8s/spring-boot-app
 ```
 
